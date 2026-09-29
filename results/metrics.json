@@ -1,0 +1,130 @@
+{
+ "project": "ai-learn-26-rope-embeddings",
+ "seed": 42,
+ "config": {
+  "d_model": 32,
+  "seq_len": 16,
+  "rope_base": 10000.0,
+  "offset": 4,
+  "n_distractors": 3,
+  "n_train": 640,
+  "n_test": 256,
+  "steps": 180,
+  "lr": 0.08,
+  "logit_scale": 8.0,
+  "shifts": [1, 2, 4, 8]
+ },
+ "relative_property": {"max_abs_vs_rel_err": 7.105427357601002e-15, "max_shift_invariance_err": 1.4210854715202004e-14, "pass": true, "n_trials": 32},
+ "relative_invariance": {
+  "per_shift": [
+   {"pe": "none", "delta": 1, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "none", "delta": 2, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "none", "delta": 4, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "none", "delta": 8, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "absolute", "delta": 1, "cosine": 0.970335, "rel_l2": 0.241774},
+   {"pe": "absolute", "delta": 2, "cosine": 0.900772, "rel_l2": 0.44196},
+   {"pe": "absolute", "delta": 4, "cosine": 0.795842, "rel_l2": 0.690591},
+   {"pe": "absolute", "delta": 8, "cosine": 0.736554, "rel_l2": 0.776572},
+   {"pe": "rope", "delta": 1, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "rope", "delta": 2, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "rope", "delta": 4, "cosine": 1.0, "rel_l2": 0.0},
+   {"pe": "rope", "delta": 8, "cosine": 1.0, "rel_l2": 0.0}
+  ],
+  "summary": {
+   "none": {"mean_cosine": 1.0, "min_cosine": 1.0},
+   "absolute": {"mean_cosine": 0.850876, "min_cosine": 0.736554},
+   "rope": {"mean_cosine": 1.0, "min_cosine": 1.0}
+  },
+  "seq_len": 16,
+  "d_model": 32
+ },
+ "closed_form": {
+  "offsets": [-15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+  "rope_scores": [-1.304135, -0.135671, 0.219146, -0.524958, -1.788505, -2.737079, -3.054411, -3.155467, -3.658119, -4.637037, -5.396121, -5.016401, -3.20615, -0.675218, 1.335457, 1.983133, 1.411772, 0.505924, 0.062409, 0.139215, 0.151149, -0.422372, -1.417988, -2.064863, -1.70154, -0.462215, 0.732623, 0.917272, -0.08715, -1.491614, -2.1777],
+  "abs_mean_placement_variance": 3.832697,
+  "rope_is_function_of_offset_only": true,
+  "abs_score_variance_across_placements": [0.0, 3.9e-05, 0.184139, 0.547567, 0.54693, 0.395637, 0.649384, 1.567185, 3.426029, 5.987766, 8.088976, 8.981726, 9.218029, 9.685723, 10.563357, 11.153628, 10.943547, 9.137141, 6.606436, 4.307594, 2.862593, 2.327894, 2.494477, 3.070679, 3.187868, 2.092194, 0.606263, 0.022391, 0.098279, 0.060149, 0.0]
+ },
+ "train_results": [
+  {
+   "pe": "none",
+   "final_acc": 0.25,
+   "final_mass": 0.1365,
+   "final_logit_gap": -0.0032,
+   "chance_acc": 0.0625,
+   "history": [
+    {"step": 0, "loss": 2.7677, "acc": 0.0117, "mass": 0.0625, "logit_gap": -0.023},
+    {"step": 20, "loss": 2.6519, "acc": 0.082, "mass": 0.0704, "logit_gap": -0.0075},
+    {"step": 40, "loss": 2.5584, "acc": 0.1719, "mass": 0.0785, "logit_gap": -0.0024},
+    {"step": 60, "loss": 2.4482, "acc": 0.2109, "mass": 0.0869, "logit_gap": -0.0018},
+    {"step": 80, "loss": 2.3323, "acc": 0.2266, "mass": 0.0957, "logit_gap": -0.0018},
+    {"step": 100, "loss": 2.2283, "acc": 0.2266, "mass": 0.1046, "logit_gap": -0.002},
+    {"step": 120, "loss": 2.1709, "acc": 0.2188, "mass": 0.1135, "logit_gap": -0.0023},
+    {"step": 140, "loss": 2.0737, "acc": 0.2266, "mass": 0.1219, "logit_gap": -0.0026},
+    {"step": 160, "loss": 1.9988, "acc": 0.25, "mass": 0.1298, "logit_gap": -0.0029},
+    {"step": 179, "loss": 1.9767, "acc": 0.25, "mass": 0.1365, "logit_gap": -0.0032}
+   ],
+   "attn_row": [0.1226, 0.0354, 0.1285, 0.0356, 0.0436, 0.0376, 0.1256, 0.0207, 0.0291, 0.037, 0.0404, 0.0396, 0.1233, 0.039, 0.1238, 0.0182],
+   "label": 2,
+   "query_idx": 6,
+   "offset": 4,
+   "seq_len": 16,
+   "n_distractors": 3,
+   "logit_scale": 8.0
+  },
+  {
+   "pe": "absolute",
+   "final_acc": 0.7969,
+   "final_mass": 0.6661,
+   "final_logit_gap": 0.1569,
+   "chance_acc": 0.0625,
+   "history": [
+    {"step": 0, "loss": 3.0815, "acc": 0.1523, "mass": 0.098, "logit_gap": -0.0781},
+    {"step": 20, "loss": 1.0832, "acc": 0.6367, "mass": 0.3491, "logit_gap": 0.018},
+    {"step": 40, "loss": 0.8107, "acc": 0.75, "mass": 0.4733, "logit_gap": 0.0551},
+    {"step": 60, "loss": 0.574, "acc": 0.7578, "mass": 0.5404, "logit_gap": 0.0789},
+    {"step": 80, "loss": 0.6796, "acc": 0.7656, "mass": 0.5808, "logit_gap": 0.0991},
+    {"step": 100, "loss": 0.5296, "acc": 0.7656, "mass": 0.6036, "logit_gap": 0.1114},
+    {"step": 120, "loss": 0.4242, "acc": 0.7773, "mass": 0.6255, "logit_gap": 0.125},
+    {"step": 140, "loss": 0.3895, "acc": 0.7969, "mass": 0.6485, "logit_gap": 0.1417},
+    {"step": 160, "loss": 0.4285, "acc": 0.7852, "mass": 0.6504, "logit_gap": 0.1426},
+    {"step": 179, "loss": 0.334, "acc": 0.7969, "mass": 0.6661, "logit_gap": 0.1569}
+   ],
+   "attn_row": [0.0007, 0.0007, 0.0, 0.0, 0.0, 0.0002, 0.0466, 0.9334, 0.0181, 0.0, 0.0, 0.0, 0.0, 0.0003, 0.0, 0.0],
+   "label": 7,
+   "query_idx": 11,
+   "offset": 4,
+   "seq_len": 16,
+   "n_distractors": 3,
+   "logit_scale": 8.0
+  },
+  {
+   "pe": "rope",
+   "final_acc": 0.9727,
+   "final_mass": 0.3233,
+   "final_logit_gap": 0.0872,
+   "chance_acc": 0.0625,
+   "history": [
+    {"step": 0, "loss": 2.7744, "acc": 0.0781, "mass": 0.0636, "logit_gap": -0.0225},
+    {"step": 20, "loss": 2.6057, "acc": 0.3203, "mass": 0.074, "logit_gap": -0.0056},
+    {"step": 40, "loss": 2.4397, "acc": 0.6484, "mass": 0.0861, "logit_gap": 0.0045},
+    {"step": 60, "loss": 2.3129, "acc": 0.832, "mass": 0.1015, "logit_gap": 0.0123},
+    {"step": 80, "loss": 2.083, "acc": 0.9023, "mass": 0.1213, "logit_gap": 0.0204},
+    {"step": 100, "loss": 1.9031, "acc": 0.957, "mass": 0.148, "logit_gap": 0.0303},
+    {"step": 120, "loss": 1.6535, "acc": 0.9648, "mass": 0.1827, "logit_gap": 0.0423},
+    {"step": 140, "loss": 1.5058, "acc": 0.9648, "mass": 0.2257, "logit_gap": 0.0564},
+    {"step": 160, "loss": 1.2168, "acc": 0.9688, "mass": 0.2745, "logit_gap": 0.0718},
+    {"step": 179, "loss": 1.0609, "acc": 0.9727, "mass": 0.3233, "logit_gap": 0.0872}
+   ],
+   "attn_row": [0.0453, 0.0511, 0.04, 0.2025, 0.0183, 0.0518, 0.0166, 0.1072, 0.0506, 0.0995, 0.0989, 0.0975, 0.0269, 0.0457, 0.035, 0.0129],
+   "label": 3,
+   "query_idx": 7,
+   "offset": 4,
+   "seq_len": 16,
+   "n_distractors": 3,
+   "logit_scale": 8.0
+  }
+ ],
+ "headline": {"rope_invariance_cosine": 1.0, "absolute_invariance_cosine": 0.850876, "none_invariance_cosine": 1.0, "rope_acc": 0.9727, "absolute_acc": 0.7969, "none_acc": 0.25, "rope_mass": 0.3233, "absolute_mass": 0.6661, "none_mass": 0.1365, "rope_logit_gap": 0.0872, "chance_acc": 0.0625, "relative_property_pass": true, "abs_placement_variance": 3.832697},
+ "wall_time_s": 0.99
+}
