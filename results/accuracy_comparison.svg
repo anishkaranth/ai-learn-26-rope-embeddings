@@ -1,1 +1,58 @@
-placeholder
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="396pt" height="230.4pt" viewBox="0 0 396 230.4" version="1.1">
+<style type="text/css">.s0{stroke:#000000;stroke-width:0.8}.s1{fill:none;stroke:#b0b0b0;stroke-opacity:0.3;stroke-width:0.8;stroke-linecap:square}.s2{font-size:10px;font-family:sans-serif;text-anchor:end}.s3{fill:#2a9d8f}.s4{fill:#e76f51}.s5{font-size:10px;font-family:sans-serif;text-anchor:middle}.s6{fill:none;stroke:#000000;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square}.s7{font-size:8px;font-family:sans-serif;text-anchor:start}.s8{fill:#ffffff}.s9{fill:none;stroke-dasharray:3.7,1.6;stroke-dashoffset:0;stroke:#555555}</style>
+<defs>
+<style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<path d="M 0 230.4 L 396 230.4 L 396 0 L 0 0 z" class="s8"/>
+<path d="M 47.6 202.3 L 385.2 202.3 L 385.2 26.2 L 47.6 26.2 z" class="s8"/>
+<path d="M 63 202.3 L 102.8 202.3 L 102.8 160.3 L 63 160.3 z" class="s3"/>
+<path d="M 176.6 202.3 L 216.4 202.3 L 216.4 68.6 L 176.6 68.6 z" class="s3"/>
+<path d="M 290.3 202.3 L 330.1 202.3 L 330.1 39.1 L 290.3 39.1 z" class="s3"/>
+<path d="M 102.8 202.3 L 142.5 202.3 L 142.5 179.4 L 102.8 179.4 z" class="s4"/>
+<path d="M 216.4 202.3 L 256.2 202.3 L 256.2 90.6 L 216.4 90.6 z" class="s4"/>
+<path d="M 330.1 202.3 L 369.9 202.3 L 369.9 148.1 L 330.1 148.1 z" class="s4"/>
+<defs>
+<path id="md3457febcd" d="M 0 0 L 0 3.5" class="s0"/>
+</defs>
+<use xlink:href="#md3457febcd" x="102.8" y="202.3" class="s0"/>
+<text x="102.8" y="216.9" class="s5">no PE</text>
+<use xlink:href="#md3457febcd" x="216.4" y="202.3" class="s0"/>
+<text x="216.4" y="216.9" class="s5">absolute sin</text>
+<use xlink:href="#md3457febcd" x="330.1" y="202.3" class="s0"/>
+<text x="330.1" y="216.9" class="s5">RoPE</text>
+<path d="M 47.6 202.3 L 385.2 202.3" class="s1"/>
+<defs>
+<path id="m4831806c66" d="M 0 0 L -3.5 0" class="s0"/>
+</defs>
+<use xlink:href="#m4831806c66" x="47.6" y="202.3" class="s0"/>
+<text x="40.6" y="206.1" class="s2">0.0</text>
+<path d="M 47.6 168.7 L 385.2 168.7" class="s1"/>
+<use xlink:href="#m4831806c66" x="47.6" y="168.7" class="s0"/>
+<text x="40.6" y="172.5" class="s2">0.2</text>
+<path d="M 47.6 135.2 L 385.2 135.2" class="s1"/>
+<use xlink:href="#m4831806c66" x="47.6" y="135.2" class="s0"/>
+<text x="40.6" y="139" class="s2">0.4</text>
+<path d="M 47.6 101.6 L 385.2 101.6" class="s1"/>
+<use xlink:href="#m4831806c66" x="47.6" y="105.4" class="s2">0.6</text>
+<path d="M 47.6 68.1 L 385.2 68.1" class="s1"/>
+<use xlink:href="#m4831806c66" x="47.6" y="68.1" class="s0"/>
+<text x="40.6" y="71.9" class="s2">0.8</text>
+<path d="M 47.6 34.5 L 385.2 34.5" class="s1"/>
+<use xlink:href="#m4831806c66" x="47.6" y="34.5" class="s0"/>
+<text x="40.6" y="38.3" class="s2">1.0</text>
+<text x="18.3" y="114.2" transform="rotate(-90 18.3 114.2)" class="s5">score</text>
+<path d="M 47.6 191.8 L 385.2 191.8" class="s9"/>
+<path d="M 47.6 202.3 L 47.6 26.2" class="s6"/>
+<path d="M 385.2 202.3 L 385.2 26.2" class="s6"/>
+<path d="M 47.6 202.3 L 385.2 202.3" class="s6"/>
+<path d="M 47.6 26.2 L 385.2 26.2" class="s6"/>
+<text style="font-size: 12px; font-family: sans-serif; text-anchor: middle" x="216.4" y="20.2">Relative-offset retrieval (test)</text>
+<path d="M 53.2 68.6 L 158 68.6 Q 159.6 68.6 159.6 67 L 159.6 31.8 Q 159.6 30.2 158 30.2 L 53.2 30.2 Q 51.6 30.2 51.6 31.8 L 51.6 67 Q 51.6 68.6 53.2 68.6 z" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+<path d="M 54.8 36.6 L 62.8 36.6 L 70.8 36.6" class="s9"/>
+<text x="77.2" y="39.4" class="s7">chance</text>
+<path d="M 54.8 51.4 L 70.8 51.4 L 70.8 45.8 L 54.8 45.8 z" class="s3"/>
+<text x="77.2" y="51.4" class="s7">top-1 acc</text>
+<path d="M 54.8 63.4 L 70.8 63.4 L 70.8 57.8 L 54.8 57.8 z" class="s4"/>
+<text x="77.2" y="63.4" class="s7">attn mass on target</text>
+</svg>
