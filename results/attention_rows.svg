@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324pt" height="187.2pt" viewBox="0 0 324 187.2" version="1.1">
+<style type="text/css">.s0{fill:#2a9d8f}.s1{stroke:#000000;stroke-width:0.8}.s2{font-size:10px;font-family:sans-serif;text-anchor:middle}.s3{font-size:10px;font-family:sans-serif;text-anchor:end}.s4{fill:none;stroke:#000000;stroke-width:0.8;stroke-linejoin:miter;stroke-linecap:square}.s5{fill:#ffffff}.s6{fill:none;stroke-dasharray:5.55,2.4;stroke-dashoffset:0;stroke:#e76f51;stroke-width:1.5}.s7{fill:none;stroke-dasharray:1.5,2.475;stroke-dashoffset:0;stroke:#126782;stroke-width:1.5}.s8{font-size:7px;font-family:sans-serif;text-anchor:start}</style>
+<defs>
+<style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<path d="M 0 187.2 L 324 187.2 L 324 0 L 0 0 z" class="s5"/>
+<path d="M 40.1 145.1 L 313.2 145.1 L 313.2 26.2 L 40.1 26.2 z" class="s5"/>
+<path d="M 52.5 145.1 L 65.1 145.1 L 65.1 119.7 L 52.5 119.7 z" class="s0"/>
+<path d="M 68.2 145.1 L 80.8 145.1 L 80.8 116.5 L 68.2 116.5 z" class="s0"/>
+<path d="M 84 145.1 L 96.5 145.1 L 96.5 122.7 L 84 122.7 z" class="s0"/>
+<path d="M 99.7 145.1 L 112.2 145.1 L 112.2 31.8 L 99.7 31.8 z" class="s0"/>
+<path d="M 115.4 145.1 L 128 145.1 L 128 134.8 L 115.4 134.8 z" class="s0"/>
+<path d="M 131.1 145.1 L 143.7 145.1 L 143.7 116.1 L 131.1 116.1 z" class="s0"/>
+<path d="M 146.8 145.1 L 159.4 145.1 L 159.4 135.8 L 146.8 135.8 z" class="s0"/>
+<path d="M 162.5 145.1 L 175.1 145.1 L 175.1 85.1 L 162.5 85.1 z" class="s0"/>
+<path d="M 178.2 145.1 L 190.8 145.1 L 190.8 116.8 L 178.2 116.8 z" class="s0"/>
+<path d="M 193.9 145.1 L 206.5 145.1 L 206.5 89.4 L 193.9 89.4 z" class="s0"/>
+<path d="M 209.7 145.1 L 222.2 145.1 L 222.2 89.8 L 209.7 89.8 z" class="s0"/>
+<path d="M 225.4 145.1 L 237.9 145.1 L 237.9 90.5 L 225.4 90.5 z" class="s0"/>
+<path d="M 241.1 145.1 L 253.7 145.1 L 253.7 130 L 241.1 130 z" class="s0"/>
+<path d="M 256.8 145.1 L 269.4 145.1 L 269.4 119.5 L 256.8 119.5 z" class="s0"/>
+<path d="M 272.5 145.1 L 285.1 145.1 L 285.1 125.5 L 272.5 125.5 z" class="s0"/>
+<path d="M 288.2 145.1 L 300.8 145.1 L 300.8 137.9 L 288.2 137.9 z" class="s0"/>
+<text x="176.7" y="173.7" class="s2">key</text>
+<path d="M 106 145.1 L 106 26.2" class="s6"/>
+<path d="M 168.8 145.1 L 168.8 26.2" class="s7"/>
+<path d="M 40.1 145.1 L 40.1 26.2" class="s4"/>
+<path d="M 313.2 145.1 L 313.2 26.2" class="s4"/>
+<path d="M 40.1 145.1 L 313.2 145.1" class="s4"/>
+<path d="M 40.1 26.2 L 313.2 26.2" class="s4"/>
+<text style="font-size: 12px; font-family: sans-serif; text-anchor: middle" x="176.7" y="20.2">RoPE attention row (sample)</text>
+</svg>
