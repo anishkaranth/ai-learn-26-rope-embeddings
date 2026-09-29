@@ -1,0 +1,7 @@
+{
+ "project": "ai-learn-26-rope-embeddings",
+ "seed": 42,
+ "config": {"d_model": 32, "seq_len": 16, "offset": 4, "rope_base": 10000.0, "steps": 180, "logit_scale": 8.0},
+ "headline": {"rope_invariance_cosine": 1.0, "absolute_invariance_cosine": 0.850876, "none_invariance_cosine": 1.0, "rope_acc": 0.9727, "absolute_acc": 0.7969, "none_acc": 0.25, "rope_mass": 0.3233, "absolute_mass": 0.6661, "none_mass": 0.1365, "rope_logit_gap": 0.0872, "chance_acc": 0.0625, "relative_property_pass": true, "abs_placement_variance": 3.832697},
+ "wall_time_s": 1.04
+}
