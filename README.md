@@ -29,7 +29,8 @@ flowchart LR
 |---|---|
 | `rope.py` | Frequencies, `apply_rope`, relative-property checks, sinusoidal PE helper |
 | `attention.py` | Tiny single-head NumPy attention (`none` / `absolute` / `rope`) |
-| `experiments.py` | Shift invariance, closed-form scores, relative-offset train loop |
+| `experiments.py` | Shift invariance, closed-form scores, relative-offset helpers |
+| `train_task.py` | Tiny Q/K train loop for relative-offset retrieval |
 | `run_smoke.py` | Deterministic smoke (seed 42) → `results/` |
 | `smoke_plots.py` | SVG plots + RESULTS.md writer |
 | `svg_utils.py` | Minify matplotlib SVGs for clean diffs |
